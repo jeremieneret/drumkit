@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/STYLE/SCSS/style.css">
+    <title>Drum Kit</title>
+</head>
+
+<body>
+    <div class="keys">
+        <div data-key="81" class="key" onkeydown="changeBackground('#62b9eb')">
+            <kbd>Q</kbd>
+            <span class="sound">Low Kick</span>
+        </div>
+        <div data-key="83" class="key" onkeydown="changeBackground('#FFDFEB')">
+            <kbd>S</kbd>
+            <span class="sound">Tight Kick</span>
+        </div>
+        <div data-key="68" class="key" onkeydown="changeBackground('#ffb8d2')">
+            <kbd>D</kbd>
+            <span class="sound">Clap</span>
+        </div>
+        <div data-key="70" class="key" onkeydown="changeBackground('#ffcfa7')">
+            <kbd>F</kbd>
+            <span class="sound">Snare</span>
+        </div>
+        <div data-key="71" class="key" onkeydown="changeBackground('#ffca68')">
+            <kbd>G</kbd>
+            <span class="sound">Rim</span>
+        </div>
+        <div data-key="72" class="key" onkeydown="changeBackground('#FFEFA7')">
+            <kbd>H</kbd>
+            <span class="sound">Tom</span>
+        </div>
+        <div data-key="74" class="key" onkeydown="changeBackground('#C9FBAC')">
+            <kbd>J</kbd>
+            <span class="sound">Hi-Hat</span>
+        </div>
+        <div data-key="75" class="key" onkeydown="changeBackground('#b0fa86')">
+            <kbd>K</kbd>
+            <span class="sound">Open-Hat</span>
+        </div>
+        <div data-key="76" class="key" onkeydown="changeBackground('#97F2EB')">
+            <kbd>L</kbd>
+            <span class="sound">FX</span>
+        </div>
+    </div>
+
+    <audio data-key="81" src="/src/assets/audio/LowKick.mp3"></audio>
+    <audio data-key="83" src="/src/assets/audio/TightKick.mp3"></audio>
+    <audio data-key="68" src="/src/assets/audio/Clap.mp3"></audio>
+    <audio data-key="70" src="/src/assets/audio/Snare.mp3"></audio>
+    <audio data-key="71" src="/src/assets/audio/Rim.mp3"></audio>
+    <audio data-key="72" src="/src/assets/audio/Tom.mp3"></audio>
+    <audio data-key="74" src="/src/assets/audio/Hi-hat.mp3"></audio>
+    <audio data-key="75" src="/src/assets/audio/Open-hat.mp3"></audio>
+    <audio data-key="76" src="/src/assets/audio/FX.mp3"></audio>
+
+    <script>
+        function changeBackground(color) {
+            document.body.style.background = color;
+        }
+    </script>
+    <script src="/src/JS/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+@import "../tools/imports.scss";
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap');
+
+body {
+    background: rgb(221, 236, 236);
+    height: 100vh;
+    font-family: 'Commissioner', sans-serif;
+}
+
+div.keys {
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    transform: translateY(calc(50vh - 50%));
+    margin: auto;
+    div.key {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        width: 70px;
+        height: 70px;
+        padding: 9px;
+        color: rgb(12, 32, 41);
+        text-transform: uppercase;
+        font-size: 8px;
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+        border: solid 3px transparent;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.39);
+        transition: all 70ms ease;
+        kbd {
+            font-size: 32px;
+            margin-bottom: 4px;
+        }
+        &.playing {
+            transform: scale(1.4);
+            border: solid 3px white;
+            border-radius: 40%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+    }
+}
